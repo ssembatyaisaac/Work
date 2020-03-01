@@ -7,30 +7,30 @@ public class Hotel {
     String Name;
     String Location;
     int Rooms;
+    Scanner enter = new Scanner(System.in);
 
     public void details(){
-        System.out.println("Name: "+this.Name);
+        System.out.println("\nName: "+this.Name);
         System.out.println("Location: "+this.Location);
-        System.out.println("Number Of Rooms: "+this.Rooms);
+        System.out.println("Number Of Rooms: "+this.Rooms+"\n");
     }
 
-    public static void main(String[] args) {
-        Hotel A[] = new Hotel[5];
-        int i = 0;
-        Scanner enter = new Scanner(System.in);
-        while (i<A.length) {
-            A[i] = new Hotel();
+    public void Suites() {
+        System.out.println("Different hotels have different kinds of suites");
+    }
 
+    public void enterHotel() {
+            System.out.println("");
             System.out.print("Enter Hotel Name: ");
-            A[i].Name = enter.nextLine();
+            Name = enter.nextLine();
             System.out.print("Enter Hotel Location: ");
-            A[i].Location = enter.nextLine();
+            Location = enter.nextLine();
             System.out.print("Enter Numer Of Rooms: ");
-            A[i].Rooms = enter.nextInt();
-            enter.nextLine();
-            A[i].details();
-            i++;
-        }
-        enter.close();
+            Rooms = enter.nextInt();
+            //enter.nextLine();
+            System.out.println("");
+  
+
     }
+    
 }
