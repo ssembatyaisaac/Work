@@ -10,13 +10,10 @@ public class Star5 extends Hotel {
     int pool_no;
 
     public void EnterSuites() {
-        //Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of Presidential Suites: ");
         pres_suites = enter.nextInt();
-        //enter.nextLine();
         System.out.print("Enter the number of Honey Moon Suites: ");
         honey_suites = enter.nextInt();
-        //enter.nextLine();
     }
 
     public void Suites(int pres_suites, int honey_suites) {

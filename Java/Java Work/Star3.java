@@ -1,12 +1,13 @@
 /**
  * Star3
  */
-public class Star3 extends Hotel{
+public class Star3 extends Hotel {
 	int suite_no;
 	public void sut(int suite){
 	suite_no = suite;
 	
 	}
+
 	public void Suites() {
         System.out.println("We only have "+ suite_no+" Honey moon Suits");
     	}
